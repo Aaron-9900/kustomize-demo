@@ -7,7 +7,7 @@ spec:
   selector:
     matchLabels:
       run: darwin
-  replicas: 3
+  replicas: 2
   template:
     metadata:
       labels:
