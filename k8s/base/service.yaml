@@ -2,6 +2,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: darwin
+  namespace: darwin     # Specify the namespace here
   labels:
     run: darwin
 spec:
