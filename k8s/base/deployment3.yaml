@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: arwin
+  namespace: darwin     # Specify the namespace here
+spec:
+  selector:
+    matchLabels:
+      run: arwin
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        run: arwin
+    spec:
+      containers:
+      - name: darwin-container-3
+        image: httpd:0
