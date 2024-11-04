@@ -14,5 +14,5 @@ spec:
         run: darwin
     spec:
       containers:
-      - name: darwin-container
+      - name: darwin-container-2
         image: httpd:2.42.1
