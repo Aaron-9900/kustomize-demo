@@ -1,1 +1,13 @@
-
+apiVersion: v1
+kind: Service
+metadata:
+  name: arwin2
+  namespace: arwin     # Specify the namespace here
+  labels:
+    run: arwin-2
+spec:
+  ports:
+  - port: 80
+    protocol: TCP
+  selector:
+    run: arwin-2
