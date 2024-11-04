@@ -1,17 +1,17 @@
 apiVersion: apps/v1
 kind: Deployment2
 metadata:
-  name: darwin
+  name: darwin-2
   namespace: darwin     # Specify the namespace here
 spec:
   selector:
     matchLabels:
-      run: darwin
+      run: darwin-2
   replicas: 2
   template:
     metadata:
       labels:
-        run: darwin
+        run: darwin-2
     spec:
       containers:
       - name: darwin-container-2
