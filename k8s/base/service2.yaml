@@ -4,10 +4,10 @@ metadata:
   name: darwin2
   namespace: darwin     # Specify the namespace here
   labels:
-    run: darwin2
+    run: darwin-2
 spec:
   ports:
   - port: 80
     protocol: TCP
   selector:
-    run: darwin2
+    run: darwin-2
