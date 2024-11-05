@@ -16,3 +16,5 @@ spec:
       containers:
       - name: darwin-container-2
         image: httpd:2.42.1
+      - name: new-container       # Name for the additional container
+        image: nginx:1.25.2 
